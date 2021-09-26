@@ -144,7 +144,7 @@ for pal in dic1:
 
 contador()
 print("actualizacion de de letras:\nM=a, U=t," \
-    "F=o, V=s, C=u, S= m, K=n L=k,e, Z=r, P=i, Q=l, Y=d, D=G")
+    "F=o, V=s, C=u, S= m, K=n L=k,e, Z=r, P=i, Q=l, Y=d, D=g")
 espacio()
 
 #Agregamos nuevas letras
@@ -152,62 +152,34 @@ posY="d"
 posD="g"
 
 #para gqmwl
-cont=0
 for pal in dic1:
     if (len(pal)==5):
-        if(pal[1]=="l" and pal[2]=="a"):
+        if(pal[1]==posQ and pal[2]==posM):
             if(pal[-1]=="k" or pal[-1]=="e"):
-                if(pal[0]!="s"and pal[-2]!="n"and pal[-2]!="r"and pal[-2]!="m")\
-                    and pal[-2]!="t"and pal[-2]!="d"and pal[-2]!="s":
+                if(pal[0]!=posV and pal[-2]!=posK and pal[-2]!=posZ and pal[-2]!=posS)\
+                    and pal[-2]!=posU and pal[-2]!=posY and pal[-2]!=posV:
                     cont+=1
                     print(pal)
 contador()
-print("actualizacion de de letras:\nM=a, U=t," \
-    "F=o, V=s, C=u, S= m, K=n L=k,e, Z=r, P=i, Q=l, Y=d, D=G"\
-    "G=b,c,f,g,p, W=c,z,k")
-'''
-
-SEXTO FILTRO DE LETRAS
-posM="a"
-posU="t"
-posF="o"
-posV="s"
-posC="u"
-posS="m"
-posK="n"
-posL="ke"
-posZ="r"
-posP="i"
-posQ="l"
-posY="d"
-posW="czk"
-posG="bcfgp"
-posD="g"
-
+print("actualizacion de de letras:\nM=a, U=t, " \
+    "F=o, V=s, C=u, S= m, K=n L=k,e, Z=r, P=i, Q=l, Y=d, D=g, W=c,z,k, "\
+        "G=b,c,f,g,p")
+espacio()
+print
 #para imv
 cont=0
 for pal in dic1:
     if (len(pal)==3):
-        if(pal[1]=="a" and pal[2]=="s"):
+        if(pal[1]==posM and pal[2]==posV):
             cont+=1
             print(pal)
-SEPTIMO FILTRO DE LETRAS
-posM="a"
-posU="t"
-posF="o"
-posV="s"
-posC="u"
-posS="m"
-posK="n"
-posL="ke"
-posZ="r"
-posP="i"
-posQ="l"
-posY="d"
-posW="czk"
-posG="bcfgp"
-posI="ghvw"
-posD="g"
+contador()
+print("actualizacion de de letras:\nM=a, U=t, " \
+    "F=o, V=s, C=u, S= m, K=n L=k,e, Z=r, P=i, Q=l, Y=d, D=g,  W=c,z,k, G=b,c,f,g,p,I=g,h,v,w")
+espacio()            
+            
+
+
 
 #para fkl
 cont=0
@@ -216,113 +188,65 @@ for pal in dic1:
         if(pal[0]=="o" and pal[1]=="n"):
             cont+=1
             print(pal)
-            
-OCTAVO FILTRO DE LETRAS
-posM="a"
-posU="t"
-posF="o"
-posV="s"
-posC="u"
-posS="m"
-posK="n"
+contador()
+print("actualizacion de de letras:\nM=a, U=t, " \
+    "F=o, V=s, C=u, S= m, K=n L=k,e, Z=r, P=i, Q=l, Y=d, D=g, W=c,z,k, "\
+    "G=b,c,f,g,p, I=h,v,w")
+espacio()     
+
+#nueva letra encontrada
 posL="e"
-posZ="r"
-posP="i"
-posQ="l"
-posY="d"
-posW="czk"
-posG="bcfp"
-posI="hvw"
-posD="g"
+
 
 #para hl
 cont=0
 for pal in dic1:
     if (len(pal)==2):
-        if(pal[1]=="e"and pal[0]!="m"and pal[0]!="r"):
+        if(pal[1]==posL and pal[0]!=posS and pal[0]!=posZ):
             cont+=1
             print(pal)
-
-
-NOVENO FILTRO DE LETRAS
-posM="a"
-posU="t"
-posF="o"
-posV="s"
-posC="u"
-posS="m"
-posK="n"
-posL="e"
-posZ="r"
-posP="i"
-posQ="l"
-posY="d"
-posW="czk"
-posG="bcfp"
-posI="hvw"
-posH="bhwy"
-posD="g"
-
+contador()
+print("actualizacion de de letras:\nM=a, U=t, " \
+    "F=o, V=s, C=u, S= m, K=n L=e, Z=r, P=i, Q=l, Y=d, D=g, W=c,z,k, "\
+        "G=b,c,f,g,p, I=h,v,w, H=b,h,w,y")
+espacio()  
 
 #para tmypkd
 cont=0
 for pal in dic1:
     if(len(pal)==6):
-        if(pal[1]=="a" and pal[2]=="d" and pal[-1]=="g"):
+        if(pal[1]==posM and pal[2]==posD and pal[-1]==posD):
             cont +=1
             print(pal)
+contador()
+print("actualizacion de de letras:\nM=a, U=t, "\
+    "F=o, V=s, C=u, S= m, K=n L=e, Z=r, P=i, Q=l, Y=d, D=g, W=c,z,k, "\
+        "I=h,v,w, H=b,h,w,y, T=f,j,w")
+espacio()  
 
-#DECIMO FILTRO DE LETRAS
-posM="a"
-posU="t"
-posF="o"
-posV="s"
-posC="u"
-posS="m"
-posK="n"
-posL="e"
-posZ="r"
-posP="i"
-posQ="l"
-posY="d"
-posD="g"
-posW="czk"
-posG="bcfp"
-posI="hvw"
-posH="bhwy"
-posT="fjw"
+          
+
+
 
 #para wmzly
 cont=0
 for pal in dic1:
     if (len(pal)==5):
-        if(pal[1]=="a"and pal[2]==posZ and pal[3]==posL\
+        if(pal[1]==posM and pal[2]==posZ and pal[3]==posL\
              and pal[-1]==posY and pal[0]!=posC and pal[0]!=posF\
                 and pal[0]!=posY):
                 if(pal[0]=="c" or pal[0]=="z" or pal[0]=="k"):
                     cont+=1
                     print(pal)
-
-
-#DECIMO FILTRO DE LETRAS
-posM="a"
-posU="t"
-posF="o"
-posV="s"
-posC="u"
-posS="m"
-posK="n"
-posL="e"
-posZ="r"
-posP="i"
-posQ="l"
-posY="d"
-posD="g"
+contador()
+print("actualizacion de de letras:\nM=a, U=t, "\
+    "F=o, V=s, C=u, S= m, K=n L=e, Z=r, P=i, Q=l, Y=d, D=g, W=c, "\
+        "G=b,f,p, I=h,v,w, H=b,h,w,y, T=fj,w")
+espacio() 
+#nueva letra 
 posW="c"
-posG="bfp"
-posI="hvw"
-posH="bhwy"
-posT="fjw"
+  
+
 
 #para glztlwu
 cont=0
@@ -332,34 +256,15 @@ for pal in dic1:
             and pal[-2]==posW):
              cont+=1
              print(pal)
-print(cont)
+contador()
+print("actualizacion de de letras:\nM=a, U=t, "\
+    "F=o, V=s, C=u, S= m, K=n L=e, Z=r, P=i, Q=l, Y=d, D=g, W=c, "\
+        "G=p, I=h,v,w, H=b,h,w,y, T=f, F=o")
+espacio() 
 
-#11 FILTRO DE LETRAS
-posA=""
-posB=""
-posC="u"
-posD="g"
 posF="o"
 posG="p"
-posH="bhwy"
-posI="hvw"
-posJ=""
-posK="n"
-posL="e"
-posM="a"
-posN=""
-posO=""
-posP="i"
-posQ="l"
-posR=""
-posS="m"
 posT="f"
-posU="t"
-posV="s"
-posW="c"
-posX=""
-posY="d"
-posZ="r"
 
 #para afyplv
 cont=0
@@ -367,34 +272,14 @@ for pal in dic1:
     if(len(pal)==6):
         if(pal[1]==posF and pal[2]==posY and pal[3]==posP and pal[4]==posL):
             print(pal)
+contador()
+print("actualizacion de de letras:\nM=a, U=t, "\
+    "F=o, V=s, C=u, S= m, K=n L=e, Z=r, P=i, Q=l, Y=d, D=g, W=c, "\
+        "G=p, I=h,v,w, H=h,w, T=f, F=o, A=b, B=y")
+espacio() 
 
-#12 FILTRO DE LETRAS
 posA="b"
 posB="y"
-posC="u"
-posD="g"
-posE=""
-posF="o"
-posG="p"
-posH="hw"
-posI="hvw"
-posJ=""
-posK="n"
-posL="e"
-posM="a"
-posN=""
-posO=""
-posP="i"
-posQ="l"
-posR=""
-posS="m"
-posT="f"
-posU="t"
-posV="s"
-posW="c"
-posX=""
-posY="d"
-posZ="r"
 
 #para ab
 cont=0
@@ -402,34 +287,13 @@ for pal in dic1:
     if(len(pal)==2):
         if(pal[0]==posA and pal[1]!=posL):
             print(pal)
+contador()
+print("actualizacion de de letras:\nM=a, U=t, "\
+    "F=o, V=s, C=u, S= m, K=n L=e, Z=r, P=i, Q=l, Y=d, D=g, W=c, "\
+        "G=p, I=h,v,w, H=h,w, T=f, F=o, A=b, B=y, E=k,h")
+espacio() 
 
-#13 FILTRO DE LETRAS
-posA="b"
-posB="y"
-posC="u"
-posD="g"
-posE="kh"
-posF="o"
-posG="p"
-posH="hw"
-posI="hvw"
-posJ=""
-posK="n"
-posL="e"
-posM="a"
-posN=""
-posO=""
-posP="i"
-posQ="l"
-posR=""
-posS="m"
-posT="f"
-posU="t"
-posV="s"
-posW="c"
-posX=""
-posY="d"
-posZ="r"
+
 
 #para amwe
 cont=0
@@ -437,101 +301,47 @@ for pal in dic1:
     if(len(pal)==4):
         if(pal[0]==posA and pal[1]==posM and pal[2]==posW):
             print(pal)
+contador()
+print("actualizacion de de letras:\nM=a, U=t, "\
+    "F=o, V=s, C=u, S= m, K=n L=e, Z=r, P=i, Q=l, Y=d, D=g, W=c, "\
+        "G=p, I=h,v,w, H=h,w, T=f, F=o, A=b, B=y, E=k,h, J=x, ")
 
-#14 FILTRO DE LETRAS
-posA="b"
-posB="y"
-posC="u"
-posD="g"
-posE="kh"
-posF="o"
-posG="p"
-posH="hw"
-posI="hvw"
-posJ="x"
-posK="n"
-posL="e"
-posM="a"
-posN=""
-posO=""
-posP="i"
-posQ="l"
-posR=""
-posS="m"
-posT="f"
-posU="t"
-posV="s"
-posW="c"
-posX=""
-posY="d"
-posZ="r"
+espacio()
+
+posJ="x" 
+
+
 #para dmqmjplv
 cont=0
 for pal in dic1:
     if(len(pal)==8):
         if(pal[0]==posD and pal[1]==posM and pal[3]==posM and pal[-2]==posL):
             print(pal)
-           
-#15 FILTRO DE LETRAS
-posA="b"
-posB="y"
-posC="u"
-posD="g"
-posE="kh"
-posF="o"
-posG="p"
-posH="hw"
-posI="hvw"
-posJ="x"
-posK="n"
-posL="e"
-posM="a"
-posN="q"
-posO=""
-posP="i"
-posQ="l"
-posR=""
-posS="m"
-posT="f"
-posU="t"
-posV="s"
-posW="c"
-posX=""
-posY="d"
-posZ="r"
+contador()
+print("actualizacion de de letras:\nM=a, U=t, "\
+    "F=o, V=s, C=u, S= m, K=n L=e, Z=r, P=i, Q=l, Y=d, D=g, W=c, "\
+        "G=p, I=h,v,w, H=h,w, T=f, F=o, A=b, B=y, E=k,h, J=x, "\
+            "N=q")
+
+espacio()
+posN="q"         
+
 #para lncmqqb
 cont=0
 for pal in dic1:
     if(len(pal)==7):
         if(pal[0]==posL and pal[-1]==posB and pal[-2]==posQ and pal[-3]==posQ):
             print(pal)
-#16 FILTRO DE LETRAS            
-posA="b"
-posB="y"
-posC="u"
-posD="g"
-posE="kh"
-posF="o"
-posG="p"
-posH="hw"
-posI="hw"
-posJ="x"
-posK="n"
-posL="e"
-posM="a"
-posN="q"
-posO="v"
-posP="i"
-posQ="l"
-posR=""
-posS="m"
-posT="f"
-posU="t"
-posV="s"
-posW="c"
-posX=""
-posY="d"
-posZ="r"
+contador()
+print("actualizacion de de letras:\nM=a, U=t, "\
+    "F=o, V=s, C=u, S= m, K=n L=e, Z=r, P=i, Q=l, Y=d, D=g, W=c, "\
+        "G=p, I=h,v,w, H=h,w, T=f, F=o, A=b, B=y, E=k,h, J=x, "\
+            "N=q, O= v")
+
+espacio()            
+
+posO="v"            
+
 #para ckpolzvl
 cont=0
 for pal in dic1:
@@ -539,57 +349,40 @@ for pal in dic1:
         if(pal[0]==posC and pal[1]==posK and pal[4]==posL and pal[5]==posZ\
              and pal[-1]==posL):
              print(pal)
-              '''
-#16 FILTRO DE LETRAS
-posA="b"
-posB="y"
-posC="u"
-posD="g"
-posE="k"
-posF="o"
-posG="p"
+contador()
+print("actualizacion de de letras:\nM=a, U=t, "\
+    "F=o, V=s, C=u, S= m, K=n L=e, Z=r, P=i, Q=l, Y=d, D=g, W=c, "\
+        "G=p, I=w, H=h, T=f, F=o, A=b, B=y, E=k, J=x, "\
+            "N=q, O= v")
+
+espacio()                
+posE="k" 
 posH="h"
-posI="w"
-posJ="x"
-posK="n"
-posL="e"
-posM="a"
-posN="q"
-posO="v"
-posP="i"
-posQ="l"
-posR=""
-posS="m"
-posT="f"
-posU="t"
-posV="s"
-posW="c"
-posX=""
-posY="d"
-posZ="r"
-'''
+posI="w"          
+
+
 #para uhl
 cont=0
 for pal in dic1:
     if(len(pal)==3):
         if(pal[0]==posU and pal[2]==posL):
                 print(pal)
-                '''
+contador()
+espacio() 
 espacio()
-
 def traduccion(cifrado):
     nuevoTexto={'a':'b','b':'y','c':'u','d':'g','e':'k','f':'o','g':'p','i':'w',\
         'j':'x','k':'n','l':'e','m':'a','n':'q','o':'v','p':'i','q':'l','s':'m',\
             't':'f','u':'t','v':'s','w':'c','y':'d','z':'r'}
+    print(nuevoTexto,"\nEste es el diccionario que usaremos para descifrarlo ")
+    espacio()
+    espacio()
+    
     transTable=cifrado.maketrans(nuevoTexto)
     cifrado = cifrado.translate(transTable)
-    print(cifrado)
-
+    print("El texto traducido es:\n",cifrado)
 
 traduccion(cifrado)
-
-
-
 
 espacio()
 
