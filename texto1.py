@@ -7,7 +7,6 @@ Created on Sat Sep 25 17:02:37 2021
 """
 from typing import Counter
 
-
 def cargarPalabras():
     archivo = open("words.txt","r")
     texto = archivo.read()
@@ -20,9 +19,7 @@ def espacio():
         print('      ')
         i+=1
 
-
 #print(len(dic1)) imprime la longitud del diccionaro
-
 
 alfabeto = "abcdefghijklmnopqrstuvwxyz"
 
@@ -37,7 +34,6 @@ cifrado = "smk wfkvpylzly ipuh hpsvlqt, tfz pk m imb, smk, slkumqqb, imv"\
           " vumzv ilzl ihpul yimztv, tmypkd uf uhl lky."
           
 letras = {} #Se inicializa el diccionario
-
 
 for c in alfabeto: #se crea e inicializa el diccionario "letras"
 #para cada CARACTER en ALFABETO, c va a valer 0
@@ -177,9 +173,6 @@ contador()
 print("actualizacion de de letras:\nM=a, U=t, " \
     "F=o, V=s, C=u, S= m, K=n L=k,e, Z=r, P=i, Q=l, Y=d, D=g,  W=c,z,k, G=b,c,f,g,p,I=g,h,v,w")
 espacio()            
-            
-
-
 
 #para fkl
 cont=0
@@ -196,7 +189,6 @@ espacio()
 
 #nueva letra encontrada
 posL="e"
-
 
 #para hl
 cont=0
@@ -224,10 +216,6 @@ print("actualizacion de de letras:\nM=a, U=t, "\
         "I=h,v,w, H=b,h,w,y, T=f,j,w")
 espacio()  
 
-          
-
-
-
 #para wmzly
 cont=0
 for pal in dic1:
@@ -245,8 +233,6 @@ print("actualizacion de de letras:\nM=a, U=t, "\
 espacio() 
 #nueva letra 
 posW="c"
-  
-
 
 #para glztlwu
 cont=0
