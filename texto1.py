@@ -79,7 +79,7 @@ for pal in dic1:
             cont +=1
             print(pal)
 contador()
-print("actualizacion de de palabras:\nM=a,e, U=t, F=i,o, V=g,n,s, C=c,u,n, S= v,m,r, K=n,o, L=knse")
+print("actualizacion de de letras:\nM=a,e, U=t, F=i,o, V=g,n,s, C=c,u,n, S= v,m,r, K=n,o, L=knse")
 espacio()
 
 #para uzpqqpfk
@@ -92,14 +92,12 @@ for pal in dic1:
                   cont +=1
                   print(pal)
 contador()
-print("actualizacion de de palabras:\nM=a,e, U=t, F=o, V=g,n,s, C=c,u,n, S= v,m,r, K=n L=knse, Z=r, P=i, Q=l")
-
-'''
+print("actualizacion de de letras:\nM=a,e, U=t, F=o, V=g,n,s, C=c,u,n, S= v,m,r, K=n L=k,n,s,e, Z=r, P=i, Q=l")
+espacio()
 
 #para mcufsmufkv segunda ronda
-      
+cont=0     
 for pal in dic1:
-    
     if (len(pal)==10):
         if(pal[3] and pal[7]=="o"):
             if(pal[-2]=="n"):
@@ -107,9 +105,11 @@ for pal in dic1:
                     if(pal[2]=="t"and pal[6]=="t"):
                         cont +=1
                         print(pal)
-print(cont)
+contador()
+print("actualizacion de de letras:\nM=a, U=t, F=o, V=s, C=u, S= m, K=n L=k,e, Z=r, P=i, Q=l")
+espacio()
 
-CUARTO FILTRO DE LETRAS
+#Aqui las empezamos a usar como variables pos=posible
 posM="a"
 posU="t"
 posF="o"
@@ -117,61 +117,42 @@ posV="s"
 posC="u"
 posS="m"
 posK="n"
-posL="ke"
 posZ="r"
 posP="i"
 posQ="l"
 
 #para spkyv
-
+cont=0
 for pal in dic1:
     if (len(pal)==5):
-        if (pal[0]=="m" and pal[1]=="i" and pal[2]=="n" and pal[-1]=="s"):
+        if (pal[0]==posS and pal[1]==posP and pal[2]==posK and pal[-1]==posV):
             cont+=1
             print(pal)
-print(cont)
-
-QUINTO FILTRO DE LETRAS
-posM="a"
-posU="t"
-posF="o"
-posV="s"
-posC="u"
-posS="m"
-posK="n"
-posL="ke"
-posZ="r"
-posP="i"
-posQ="l"
-posY="dek"
-
+contador()
+print("actualizacion de de letras:\nM=a, U=t, F=o, V=s, C=u, S= m, K=n L=k,e, Z=r, P=i, Q=l, Y=d,e,k")
+espacio()
 
 #para ypsspkd
+cont=0
 for pal in dic1:
     if (len(pal)==7):
-        if(pal[1]=="i"and pal[-3]=="i"):
-            if(pal[2]=="m" and pal[3]=="m"):
-                if(pal[-2]=="n"):
+        if(pal[1]==posP and pal[-3]==posP):
+            if(pal[2]==posS and pal[3]==posS):
+                if(pal[-2]==posK):
                     cont+=1
                     print(pal)
-print(cont)
 
-SEXTO FILTRO DE LETRAS
-posM="a"
-posU="t"
-posF="o"
-posV="s"
-posC="u"
-posS="m"
-posK="n"
-posL="ke"
-posZ="r"
-posP="i"
-posQ="l"
+contador()
+print("actualizacion de de letras:\nM=a, U=t," \
+    "F=o, V=s, C=u, S= m, K=n L=k,e, Z=r, P=i, Q=l, Y=d, D=G")
+espacio()
+
+#Agregamos nuevas letras
 posY="d"
 posD="g"
 
 #para gqmwl
+cont=0
 for pal in dic1:
     if (len(pal)==5):
         if(pal[1]=="l" and pal[2]=="a"):
@@ -180,7 +161,11 @@ for pal in dic1:
                     and pal[-2]!="t"and pal[-2]!="d"and pal[-2]!="s":
                     cont+=1
                     print(pal)
-print(cont)    
+contador()
+print("actualizacion de de letras:\nM=a, U=t," \
+    "F=o, V=s, C=u, S= m, K=n L=k,e, Z=r, P=i, Q=l, Y=d, D=G"\
+    "G=b,c,f,g,p, W=c,z,k")
+'''
 
 SEXTO FILTRO DE LETRAS
 posM="a"
@@ -200,6 +185,7 @@ posG="bcfgp"
 posD="g"
 
 #para imv
+cont=0
 for pal in dic1:
     if (len(pal)==3):
         if(pal[1]=="a" and pal[2]=="s"):
@@ -224,6 +210,7 @@ posI="ghvw"
 posD="g"
 
 #para fkl
+cont=0
 for pal in dic1:
     if (len(pal)==3):
         if(pal[0]=="o" and pal[1]=="n"):
@@ -249,6 +236,7 @@ posI="hvw"
 posD="g"
 
 #para hl
+cont=0
 for pal in dic1:
     if (len(pal)==2):
         if(pal[1]=="e"and pal[0]!="m"and pal[0]!="r"):
@@ -277,6 +265,7 @@ posD="g"
 
 
 #para tmypkd
+cont=0
 for pal in dic1:
     if(len(pal)==6):
         if(pal[1]=="a" and pal[2]=="d" and pal[-1]=="g"):
@@ -304,6 +293,7 @@ posH="bhwy"
 posT="fjw"
 
 #para wmzly
+cont=0
 for pal in dic1:
     if (len(pal)==5):
         if(pal[1]=="a"and pal[2]==posZ and pal[3]==posL\
@@ -335,7 +325,7 @@ posH="bhwy"
 posT="fjw"
 
 #para glztlwu
-#     perfect
+cont=0
 for pal in dic1:
     if(len(pal)==7):
         if(pal[1]==posL and pal[4]==posL and pal[2]==posZ\
@@ -372,6 +362,7 @@ posY="d"
 posZ="r"
 
 #para afyplv
+cont=0
 for pal in dic1:
     if(len(pal)==6):
         if(pal[1]==posF and pal[2]==posY and pal[3]==posP and pal[4]==posL):
@@ -406,6 +397,7 @@ posY="d"
 posZ="r"
 
 #para ab
+cont=0
 for pal in dic1:
     if(len(pal)==2):
         if(pal[0]==posA and pal[1]!=posL):
@@ -440,6 +432,7 @@ posY="d"
 posZ="r"
 
 #para amwe
+cont=0
 for pal in dic1:
     if(len(pal)==4):
         if(pal[0]==posA and pal[1]==posM and pal[2]==posW):
@@ -473,7 +466,7 @@ posX=""
 posY="d"
 posZ="r"
 #para dmqmjplv
-#     galaxies
+cont=0
 for pal in dic1:
     if(len(pal)==8):
         if(pal[0]==posD and pal[1]==posM and pal[3]==posM and pal[-2]==posL):
@@ -507,7 +500,7 @@ posX=""
 posY="d"
 posZ="r"
 #para lncmqqb
-#     equally
+cont=0
 for pal in dic1:
     if(len(pal)==7):
         if(pal[0]==posL and pal[-1]==posB and pal[-2]==posQ and pal[-3]==posQ):
@@ -540,7 +533,7 @@ posX=""
 posY="d"
 posZ="r"
 #para ckpolzvl
-#     universe
+cont=0
 for pal in dic1:
     if(len(pal)==8):
         if(pal[0]==posC and pal[1]==posK and pal[4]==posL and pal[5]==posZ\
@@ -576,6 +569,7 @@ posY="d"
 posZ="r"
 '''
 #para uhl
+cont=0
 for pal in dic1:
     if(len(pal)==3):
         if(pal[0]==posU and pal[2]==posL):
