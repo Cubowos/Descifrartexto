@@ -271,6 +271,7 @@ cont=0
 for pal in dic1:
     if(len(pal)==6):
         if(pal[1]==posF and pal[2]==posY and pal[3]==posP and pal[4]==posL):
+            cont +=1
             print(pal)
 contador()
 print("actualizacion de de letras:\nM=a, U=t, "\
@@ -286,6 +287,7 @@ cont=0
 for pal in dic1:
     if(len(pal)==2):
         if(pal[0]==posA and pal[1]!=posL):
+            cont +=1
             print(pal)
 contador()
 print("actualizacion de de letras:\nM=a, U=t, "\
@@ -300,6 +302,7 @@ cont=0
 for pal in dic1:
     if(len(pal)==4):
         if(pal[0]==posA and pal[1]==posM and pal[2]==posW):
+            cont +=1
             print(pal)
 contador()
 print("actualizacion de de letras:\nM=a, U=t, "\
@@ -316,6 +319,7 @@ cont=0
 for pal in dic1:
     if(len(pal)==8):
         if(pal[0]==posD and pal[1]==posM and pal[3]==posM and pal[-2]==posL):
+            cont +=1
             print(pal)
 contador()
 print("actualizacion de de letras:\nM=a, U=t, "\
@@ -331,6 +335,7 @@ cont=0
 for pal in dic1:
     if(len(pal)==7):
         if(pal[0]==posL and pal[-1]==posB and pal[-2]==posQ and pal[-3]==posQ):
+            cont +=1
             print(pal)
 contador()
 print("actualizacion de de letras:\nM=a, U=t, "\
@@ -348,6 +353,7 @@ for pal in dic1:
     if(len(pal)==8):
         if(pal[0]==posC and pal[1]==posK and pal[4]==posL and pal[5]==posZ\
              and pal[-1]==posL):
+             cont +=1
              print(pal)
 contador()
 print("actualizacion de de letras:\nM=a, U=t, "\
@@ -367,6 +373,7 @@ for pal in dic1:
     if(len(pal)==3):
         if(pal[0]==posU and pal[2]==posL):
                 print(pal)
+                cont +=1
 contador()
 espacio() 
 espacio()
