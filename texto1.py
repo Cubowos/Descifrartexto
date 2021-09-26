@@ -15,6 +15,12 @@ def cargarPalabras():
     archivo.close()
     return (datos)
 
+def espacio():
+    for i in range(2):
+        print('      ')
+        i+=1
+
+
 #print(len(dic1)) imprime la longitud del diccionaro
 
 
@@ -32,15 +38,13 @@ cifrado = "smk wfkvpylzly ipuh hpsvlqt, tfz pk m imb, smk, slkumqqb, imv"\
           
 letras = {} #Se inicializa el diccionario
 
-'''
+
 for c in alfabeto: #se crea e inicializa el diccionario "letras"
 #para cada CARACTER en ALFABETO, c va a valer 0
     letras[c] = 0
 #print(letras) esto imprime el primer diccionario
-'''#sirve para inicializarlo pero perfectamente queda comentado
 for c in alfabeto:
     letras[c]=cifrado.count(c)
-#print(letras)
 
 archivo=open("salida.csv","w")
 for c in letras.keys():
@@ -49,50 +53,37 @@ archivo.close()
 
 dic1 = cargarPalabras()
 cont = 0
-'''
+def contador():
+    print('las palabras que hay son: '+str(cont))
+    
+   
 #probando con mcufsmufkv
-
-              activating
-              activation
-              automatons
-              entireties
-              
+espacio()
+cont=0
 for pal in dic1:
     if (len(pal)==10):
         if (pal[0]==pal[5]and pal[3]==pal[7]and pal[2]==pal[6]):
             cont +=1
             print(pal)
-print(cont)
 
-PRIMER FILTRO DE LETRAS            
-posM="ae"
-posU="t"
-posF="io"
-posV="gns"
-posC="cun"
-posS="vmr"
-posK="noe"
+contador()
+print("\nsera nuestro primer filtro de letras:\nM=a,e, U=t, F=i,o, V=g,n,s, C=c,u,n, S= v,m,r, K=n,o,e")          
 
-SEGUNDO FILTRO DE LETRAS
-posM="ae"
-posU="t"
-posF="io"
-posV="gns"
-posC="cun"
-posS="vmr"
-posK="no"
-posL="knse"
-
+espacio()
 #para fkl
+cont = 0
 for pal in dic1:
     if (len(pal)==3):
       if(pal[0]=="i"or pal[0]=="o"):
           if(pal[1]=="n"or pal[1]=="o"or pal[1]=="e"):
             cont +=1
             print(pal)
-print(cont)
+contador()
+print("actualizacion de de palabras:\nM=a,e, U=t, F=i,o, V=g,n,s, C=c,u,n, S= v,m,r, K=n,o, L=knse")
+espacio()
 
 #para uzpqqpfk
+cont = 0
 for pal in dic1:
     if (len(pal)==8):
       if(pal[0]=="t"):
@@ -100,20 +91,10 @@ for pal in dic1:
               if(pal[2]==pal[5] and pal[3]==pal[4]):
                   cont +=1
                   print(pal)
-print(cont)
+contador()
+print("actualizacion de de palabras:\nM=a,e, U=t, F=o, V=g,n,s, C=c,u,n, S= v,m,r, K=n L=knse, Z=r, P=i, Q=l")
 
-TERCER FILTRO DE LETRAS
-posM="ae"
-posU="t"
-posF="o"
-posV="gns"
-posC="cun"
-posS="vmr"
-posK="n"
-posL="kse"
-posZ="r"
-posP="i"
-posQ="l"
+'''
 
 #para mcufsmufkv segunda ronda
       
@@ -600,9 +581,8 @@ for pal in dic1:
         if(pal[0]==posU and pal[2]==posL):
                 print(pal)
                 '''
-for i in range(2):
-    print('      ')
-    i+=1
+espacio()
+
 def traduccion(cifrado):
     nuevoTexto={'a':'b','b':'y','c':'u','d':'g','e':'k','f':'o','g':'p','i':'w',\
         'j':'x','k':'n','l':'e','m':'a','n':'q','o':'v','p':'i','q':'l','s':'m',\
@@ -614,14 +594,9 @@ def traduccion(cifrado):
 
 traduccion(cifrado)
 
-for i in range(2):
-    print('      ')
-    i+=1
-"""
-print('/////'*40)
 
-for i in range(3):
-    print('      ')
-    i+=1
 
-"""
+
+espacio()
+
+
